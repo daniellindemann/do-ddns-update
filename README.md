@@ -1,6 +1,6 @@
 # Domain Offensive FlexDNS Updater
 
-This is a script to update the FlexDNS configuration for your domain hosted at [Domain Offensive](https://do.de).  
+This is a script to update FlexDNS configurations for your domains hosted at [Domain Offensive](https://do.de).  
 See detailed instructions on Domain Offensive's website: https://www.do.de/wiki/flexdns-einrichtung/
 
 ## Run
@@ -31,7 +31,7 @@ export DDNS_HOSTNAME="my-ddns-sub-domain.mydomain.de"
 Run via Docker:
 
 ```bash
-docker run -d --name do-ddns-update --restart unless-stopped -e DDNS_USERNAME="DDNS-K00000-00000" -e DDNS_PASSWORD="passw0rd" -e DDNS_HOSTNAME="my-ddns-sub-domain.mydomain.de" do-ddns-update
+docker run -d --name do-ddns-update --restart unless-stopped -e DDNS_USERNAME="DDNS-K00000-00000" -e DDNS_PASSWORD="passw0rd" -e DDNS_HOSTNAME="my-ddns-sub-domain.mydomain.de" daniellindemann/do-ddns-update
 ```
 
 Run via Docker Compose:
