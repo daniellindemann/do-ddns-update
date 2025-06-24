@@ -22,13 +22,13 @@ else
     push=false
 fi
 
-# check if buildx builder exists
-if ! docker buildx ls | grep -q "do-ddns-update-builder"; then
-    docker buildx create \
-        --name do-ddns-update-builder \
-        --platform linux/amd64,linux/arm64 \
-        --use
-fi
+# # check if buildx builder exists
+# if ! docker buildx ls | grep -q "do-ddns-update-builder"; then
+#     docker buildx create \
+#         --name do-ddns-update-builder \
+#         --platform linux/amd64,linux/arm64 \
+#         --use
+# fi
 
 # Build the Docker image
 if [ "$push" = true ]; then

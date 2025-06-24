@@ -1,4 +1,4 @@
-FROM --platform=$BUILDPLATFORM alpine:3
+FROM alpine:3
 
 # default env variables
 # Optional, default is 10 minutes
